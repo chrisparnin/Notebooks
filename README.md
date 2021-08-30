@@ -59,7 +59,7 @@ npm run coverage
 
 Now private key content needs to be placed inside the 🎛️  `config-server`, in a file called `~/.ssh/web-srv`. Use a terminal to create the file.
 
-``` | {type: 'terminal', target: 'config-server', 'background-color': '#C80815'}
+``` | {type: 'terminal', 'background-color': '#C80815'}
 ```
 
 #### Authorizing the public key on the web server 🌐
@@ -68,5 +68,5 @@ Now, we need to authorize the private key for use on the 🌍  `web-srv`!
 
 Edit the file `~/.ssh/authorized_keys`, and add the public key to the list of authorized keys. 💥  Warning! Do not delete other entries, otherwise you might make your VM in accessible from ssh.
 
-``` | {type: 'terminal', target: 'web-srv', 'background-color': '#003670'}
+``` | {type: 'terminal', 'background-color': '#003670'}
 ```
