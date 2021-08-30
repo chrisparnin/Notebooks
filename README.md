@@ -77,7 +77,7 @@ You can also view the coverage report by clicking the <kbd>Reload</kbd> button, 
 
 Now private key content needs to be placed inside the 🎛️  `config-server`, in a file called `~/.ssh/web-srv`. Use a terminal to create the file.
 
-``` | {type: 'terminal', target: 't1', 'background-color': '#C80815'}
+``` | {type: 'terminal', target: 't1'}
 ```
 
 #### Authorizing the public key on the web server 🌐
