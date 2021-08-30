@@ -1,0 +1,29 @@
+{
+  "name": "testnanalysis",
+  "version": "1.0.0",
+  "description": "test workshop",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "clean": "rm -rf coverage/ .nyc_output",
+    "coverage": "nyc --reporter=lcov --reporter=text-summary npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CSC-DevOps/TestNAnalysis.git"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "ottomatica",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CSC-DevOps/TestNAnalysis/issues"
+  },
+  "homepage": "https://github.com/CSC-DevOps/TestNAnalysis#readme",
+  "dependencies": {
+    "istanbul": "^0.4.5",
+    "mocha": "^8.3.1",
+    "nyc": "^15.1.0"
+  }
+}
