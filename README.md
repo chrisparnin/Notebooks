@@ -70,7 +70,7 @@ npm run coverage
 You can also view the coverage report by clicking the <kbd>Reload</kbd> button, or in a new tab or window, open the [coverage report](coverage/lcov-report/index.html):
 
 <button onclick="window.frames['serviceFrameSend'].src+='';">Reload</button>
-<iframe id="serviceFrameSend" src="./coverage/lcov-report/index.html" width="800" height="600"  frameborder="1"></iframe>
+<iframe id="serviceFrameSend" src="./environment/coverage/lcov-report/index.html" width="800" height="600"  frameborder="1"></iframe>
 
 
 #### Storing the private key in the configuration server ⚒️
