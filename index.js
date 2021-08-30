@@ -6,3 +6,5 @@ function inc(p, q) {
     }
     return p + q/q;
 }
+
+module.exports.inc = inc;
