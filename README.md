@@ -1,3 +1,13 @@
+<!-- 
+targets:
+    - type: docker
+      name: t1
+      image: node:12-buster
+    - type: docker
+      name: t2
+      image: node:12-buster
+-->
+
 # Notebooks
 Docable Notebook playground
 
@@ -55,11 +65,19 @@ Calculate the current code coverage. Use the coverage report below to see what h
 npm run coverage
 ```
 
+##### Coverage report
+
+You can also view the coverage report by clicking the <kbd>Reload</kbd> button, or in a new tab or window, open the [coverage report](coverage/lcov-report/index.html):
+
+<button onclick="window.frames['serviceFrameSend'].src+='';">Reload</button>
+<iframe id="serviceFrameSend" src="./coverage/lcov-report/index.html" width="800" height="600"  frameborder="1"></iframe>
+
+
 #### Storing the private key in the configuration server ⚒️
 
 Now private key content needs to be placed inside the 🎛️  `config-server`, in a file called `~/.ssh/web-srv`. Use a terminal to create the file.
 
-``` | {type: 'terminal', 'background-color': '#C80815'}
+``` | {type: 'terminal', target: 't1', 'background-color': '#C80815'}
 ```
 
 #### Authorizing the public key on the web server 🌐
@@ -68,5 +86,5 @@ Now, we need to authorize the private key for use on the 🌍  `web-srv`!
 
 Edit the file `~/.ssh/authorized_keys`, and add the public key to the list of authorized keys. 💥  Warning! Do not delete other entries, otherwise you might make your VM in accessible from ssh.
 
-``` | {type: 'terminal', 'background-color': '#003670'}
+``` | {type: 'terminal', target: 't2', 'background-color': '#003670'}
 ```
